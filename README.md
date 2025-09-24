@@ -1,12 +1,38 @@
-# React + Vite
+# Assembly Endgame (React Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview
+**Assembly Endgame** is an interactive word-guessing game built with React.  
+The game challenges users to guess the correct word, letter by letter, until they either win or lose.  
 
-Currently, two official plugins are available:
+The word data is imported from a `words.js` file, where all the words are stored inside an array. This makes it easy to expand or customize the game’s word pool.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- 🎮 **Word Guessing Gameplay**: Guess the hidden word letter by letter.  
+- 📝 **Dynamic Word Source**: Words are taken from `words.js` which contains an array of possible words.  
+- 🚨 **Win / Lose Condition**: Game ends when the player either completes the word or runs out of attempts.  
+- 🎨 **Interactive UI**: Simple and responsive design for smooth gameplay.  
+- ⚡ **React Powered**: Uses React components for modular and maintainable code.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+- **React**: For building the UI and managing game state.  
+- **JavaScript (ES6+)**: Game logic and word management.  
+- **CSS**: Styling for a clean, responsive interface.  
+
+---
+
+## 🚀 How to Run Locally
+
+1. **Clone the Repository**  
+   ```bash
+   git clone <your-repository-url>
+   cd assembly-endgame
+
+npm install
+
+npm start
+
+
