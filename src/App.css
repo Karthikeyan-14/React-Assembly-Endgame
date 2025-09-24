@@ -1,0 +1,176 @@
+
+.header_content{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+
+}
+
+.result_body>p{
+  background-color: rgb(31, 146, 31);
+  width:400px;
+  color:white;
+  text-align: center;
+  padding:15px 20px;;
+  border-radius: 8px;
+
+  
+}
+.result_body{
+  display:flex;
+  justify-content: center;
+
+}
+.result_body_lose>p{
+  background-color:red;
+  width:400px;
+  color:white;
+  text-align: center;
+  padding:15px 20px;;
+  border-radius: 8px;
+
+  
+}
+.result_body_lose{
+  display:flex;
+  justify-content: center;
+
+}
+.result_body_farewell>p{
+  background-color:rgb(234, 0, 255);
+  width:400px;
+  color:white;
+  text-align: center;
+  padding:15px 20px;;
+  border-radius: 8px;
+
+  
+}
+.result_body_farewell{
+  display:flex;
+  justify-content: center;
+
+}
+
+
+.lang_list{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 10p
+  
+
+  
+}
+
+.lang_content{
+  display: flex;
+  width:500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:5px;
+  
+}
+.missed_letter{
+  color: red;
+
+}
+.word{
+  color:white;
+  display: flex;
+  justify-content: center;
+  gap:2px;
+  margin-bottom:30px;
+
+}
+.word>span{
+  height:50px;
+  width:50px;
+  background-color: #323232;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  font-size: 1.2rem;
+
+}
+.keyboard{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:8px;
+  max-width: 450px;
+  
+}
+.keyboard>button:disabled{
+  cursor:not-allowed;
+  opacity: 0.5;
+}
+.keyboard>button{
+  background-color:#FCBA29;
+  color:black;
+  height:35px;
+  width:35px;
+  border-radius: 3px;
+  border:solid #D7D7D7 1px;
+  cursor:pointer;
+}
+.keyboard>.correct{
+  background-color:#0be925;
+  color:black;
+  height:35px;
+  width:35px;
+  border-radius: 3px;
+  border:solid #D7D7D7 1px;
+  cursor:pointer;
+
+}
+.keyboard>.wrong{
+  background-color:#ff4b04;
+  color:black;
+  height:35px;
+  width:35px;
+  border-radius: 3px;
+  border:solid #D7D7D7 1px;
+  cursor:pointer;
+}
+
+.keyboard_body{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.new_game{
+  display: flex;
+  justify-content: center;
+}
+.new_game_btn{
+  background-color: rgb(1, 182, 254);
+  height:40px;
+  width:175px;
+  border-radius: 5px;
+  font-size: 1rem;
+
+}
+span.chip {
+    border-radius: 3px;
+    padding: 4.5px;
+    position: relative;
+}
+
+/* Dimmed overlay with skull on "lost" languages */
+span.chip.lost::before {
+    content: "💀";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
